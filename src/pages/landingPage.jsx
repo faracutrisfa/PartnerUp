@@ -1,12 +1,12 @@
 import React from "react";
 import Navbar from "../components/Partials/TopNavBar";
-import Description from "../components/Partials/description";
-import Kenapa from "../components/Partials/why";
-import How from "../components/Partials/how";
-import AboutUs from "../components/Partials/aboutUs";
-import Member from "../components/Partials/members";
-import Kembali from "../components/Partials/kembali";
-import Footer from "../components/Partials/footer";
+import Description from "../components/LandingPage/description"
+import Kenapa from "../components/LandingPage/why"
+import How from "../components/LandingPage/how"
+import AboutUs from "../components/LandingPage/aboutUs"
+import Member from "../components/LandingPage/members"
+import Kembali from "../components/LandingPage/kembali"
+import Footer from "../components/Partials/footer"
 
 const LandingPage = () => {
     return(
@@ -18,7 +18,7 @@ const LandingPage = () => {
             <AboutUs/>
             <Member/>
             <Kembali />
-            <Footer/>
+            <Footer />
         </div>
     )
 }

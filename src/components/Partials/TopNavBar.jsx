@@ -1,6 +1,7 @@
 import { useState } from "react";
 import {AiOutlineClose} from "react-icons/ai"
 import {HiMenuAlt1} from "react-icons/hi"
+import Logo from "../LandingPage/logo";
 
 const Navbar = () => {
 
@@ -17,7 +18,7 @@ const Navbar = () => {
     return(
        <>
             <div className="flex items-center justify-between p-10 lg:flex-row">
-                <div className="px-11"><img src="Logo.svg" alt="Logo PartnerUp" /></div>
+                <Logo />
                 <div className="space-x-4 px-11 font-medium font-Poppins">
                     <div className="ssm:hidden lg:block space-x-2">
                         <a href="#" className="hover:bg-purple-100 rounded-full px-5 py-2 text-x1">Kenapa?</a>

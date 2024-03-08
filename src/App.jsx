@@ -1,11 +1,15 @@
-import { useState } from 'react'
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import LandingPage from './pages/landingPage'
+import Login from './pages/login';
 
 function App() {
   return (
-    <>
-      <LandingPage />
-    </>
+    <Router>
+      <Routes>
+        <Route path='/' element={<LandingPage />} ></Route>
+        <Route path='/login' element={<Login />} ></Route>
+      </Routes>
+    </Router>
   )
 }
 
