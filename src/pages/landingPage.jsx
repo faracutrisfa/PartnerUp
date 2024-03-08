@@ -4,6 +4,9 @@ import Description from "../components/Partials/description";
 import Kenapa from "../components/Partials/why";
 import How from "../components/Partials/how";
 import AboutUs from "../components/Partials/aboutUs";
+import Member from "../components/Partials/members";
+import Kembali from "../components/Partials/kembali";
+import Footer from "../components/Partials/footer";
 
 const LandingPage = () => {
     return(
@@ -13,6 +16,9 @@ const LandingPage = () => {
             <Kenapa />
             <How/>
             <AboutUs/>
+            <Member/>
+            <Kembali />
+            <Footer/>
         </div>
     )
 }

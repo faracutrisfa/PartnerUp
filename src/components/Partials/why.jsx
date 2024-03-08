@@ -11,7 +11,7 @@ const Kenapa = () => {
             <img src={BackgroundWhy} alt="Background Why" className="w-full" />
             <div className="font-Poppins absolute top-24 left-1/2 transform -translate-x-1/2 w-full">
                 <h1 className="font-semibold text-3xl text-center">Kenapa <span className="text-purple-900">PartnerUp?</span></h1>
-                <div className="flex flex-col mt-20 mx-28">
+                <div className="flex flex-col mt-20 mx-40">
                     <div className="flex items-center mr-auto rounded-full bg-purple-50 px-20 py-6 mb-10">
                         <img src={IconNetwork} alt="Network" />
                         <div className="ml-4">
@@ -43,7 +43,6 @@ const Kenapa = () => {
                 </div>
             </div>
         </div>
-
     )
 }
 
