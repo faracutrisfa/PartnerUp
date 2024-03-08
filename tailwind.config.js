@@ -5,7 +5,18 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    screens: {
+      ssm: '375px',
+      sm: '640px',
+      md: '768px',
+      lg: '1024px',
+    },
+    
+    extend: {
+      fontFamily: {
+        Poppins: ['Poppins'],
+      }
+    },
   },
   plugins: [],
 }
