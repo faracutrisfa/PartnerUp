@@ -7,7 +7,7 @@ const Description = () => {
 
     return(
         <main className="max-w-7xl mx-auto my-11 font-Poppins">
-            <div className="box-border flex flex-wrap">
+            <div className="flex flex-wrap">
                 <article className="w-full md:w-2/4 mt-12 ">
                     <h1 className="font-semibold text-4xl mb-8">Halo <span className="text-purple-900">mahasiwa</span>, ayo <br /> temukan <span className="text-purple-900">partner bisnismu</span> <br /> di sini!</h1>
                     <p className="font-reguler text-xl mb-8">Berhenti membuat alasan untuk tidak memulai bisnis. <b>PartnerUp</b> menghubungkanmu dengan ribuan mahasiswa di Kota Malang yang dapat menjadi partner bisnismu!</p>
