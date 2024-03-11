@@ -5,7 +5,7 @@ import IconPartner from "../../assets/icon/partner.svg"
 import IconCollaboration from "../../assets/icon/collaboration.svg"
 import IconGrafik from "../../assets/icon/tingkatan.svg"
 
-const Kenapa = () => {
+const Why = () => {
     return(
         <div className="relative">
             <img src={BackgroundWhy} alt="Background Why" className="w-full" />
@@ -46,4 +46,4 @@ const Kenapa = () => {
     )
 }
 
-export default Kenapa;
+export default Why;

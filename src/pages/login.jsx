@@ -1,11 +1,11 @@
 import React from "react";
-import Logo from "../components/LandingPage/logo";
+import Logo from "../components/LandingPage/Logo";
 import LoginHero from "../assets/image/login-hero.svg"
 import IconGoogle from "../assets/icon/google.svg"
 import IconEmail from "../assets/icon/email.svg"
 import IconLock from "../assets/icon/lock.svg"
 import { Link } from "react-router-dom";
-import Footer from "../components/Partials/footer"
+import Footer from "../components/Partials/Footer"
 
 const Login = () => {
     return(

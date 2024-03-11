@@ -1,22 +1,22 @@
 import React from "react";
-import Navbar from "../components/Partials/TopNavBar";
-import Description from "../components/LandingPage/description"
-import Kenapa from "../components/LandingPage/why"
-import How from "../components/LandingPage/how"
-import AboutUs from "../components/LandingPage/aboutUs"
-import Member from "../components/LandingPage/members"
-import Kembali from "../components/LandingPage/kembali"
-import Footer from "../components/Partials/footer"
+import Navbar from "../components/Partials/Navbar";
+import Description from "../components/LandingPage/Description"
+import Why from "../components/LandingPage/Why"
+import How from "../components/LandingPage/How"
+import AboutUs from "../components/LandingPage/aboutUs";
+import Members from "../components/LandingPage/Members"
+import Kembali from "../components/LandingPage/Kembali"
+import Footer from "../components/Partials/Footer"
 
 const LandingPage = () => {
     return(
         <div>
             <Navbar />
             <Description />
-            <Kenapa />
+            <Why />
             <How/>
             <AboutUs/>
-            <Member/>
+            <Members/>
             <Kembali />
             <Footer />
         </div>

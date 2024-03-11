@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../components/LandingPage/logo";
+import Logo from "../components/LandingPage/Logo";
 
 const Register = () => {
     return(

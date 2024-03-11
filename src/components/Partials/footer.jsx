@@ -13,9 +13,9 @@ const Footer = () => {
                         <p className="text-black text-base font-normal font-Poppins">Fakultas Ilmu Komputer, Universitas Brawijaya, Malang, 65145<br/>+62 8xx xxxx xxxx</p>
                     </div>
                     <div className="flex flex-col ml-auto">
-                        <a href="#" className="text-black text-base font-semibold font-Poppins">Lainnya</a>
-                        <a href="#" className="text-black text-base font-normal font-Poppins">Syarat dan Ketentuan</a>
-                        <a href="#" className="text-black text-base font-normal font-Poppins">Kebijakan Privasi</a>
+                        <p href="#" className="text-black text-base font-semibold font-Poppins">Lainnya</p>
+                        <a href="#" className="text-black text-base font-normal font-Poppins"><u>Syarat dan Ketentuan</u></a>
+                        <a href="#" className="text-black text-base font-normal font-Poppins"><u>Kebijakan Privasi</u></a>
                     </div>
                 </div>
             </div>
