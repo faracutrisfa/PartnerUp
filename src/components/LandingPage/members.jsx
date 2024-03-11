@@ -2,13 +2,16 @@ import React from "react";
 import Kutipan from "../../assets/icon/Kutipan.svg"
 import CutProfile from "../../assets/image/CutProfile.svg"
 import RizkaProfile from "../../assets/image/RizkaProfile.svg"
+import Arrow from "../../assets/icon/Arrow.svg"
+import BagasProfile from "../../assets/image/BagasProfile.svg"
+import AzmiProfile from "../../assets/image/AzmiProfile.svg"
 
 const data = [
     {
         name: "Bagas Rizaluddin",
         position: "Product Manager",
         review: "saya hanya bisa pasrah dengan adiks adiks ini",
-        image: RizkaProfile,
+        image: BagasProfile,
         icon: Kutipan,
     },
     {
@@ -29,7 +32,7 @@ const data = [
         name: "Azmi Al Ghifari Rahman",
         position: "Back End Developer",
         review: "Bismillah aja",
-        image: CutProfile,
+        image: AzmiProfile,
         icon: Kutipan,
     },
 ];
@@ -56,6 +59,13 @@ function Members() {
                         </div>
                     </div>
                 ))}
+            </div>
+            <div className="mt-14 flex justify-end mx-40">
+            <div className="w-[184px] h-[34px] px-3 py-2.5 rounded-2xl border border-purple-900 justify-center flex">
+                <button className="text-purple-900 text-base font-normal font-['Poppins'] flex items-center gap-2">
+                    Kembali ke atas <img src={Arrow} alt="Arrow" />
+                </button>
+            </div>
             </div>
         </div>
     );
