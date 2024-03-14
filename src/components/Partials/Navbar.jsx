@@ -1,54 +1,31 @@
-import { useState } from "react";
-import {AiOutlineClose} from "react-icons/ai"
-import {HiMenuAlt1} from "react-icons/hi"
-import Logo from "../LandingPage/Logo";
+import React from "react";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 const Navbar = () => {
-
-    const [toggle, setToggle] = useState(false);
-
-    function openHamburger() {
-        setToggle(true);
-    }
-
-    function closeHamburger() {
-        setToggle(false);
-    }
-
     return(
-       <>
-            <div className="flex items-center justify-between p-10 lg:flex-row">
-                <Logo />
-                <div className="space-x-4 px-11 font-medium font-Poppins">
-                    <div className="ssm:hidden lg:block space-x-2">
-                        <a href="#" className="hover:bg-purple-100 rounded-full px-5 py-2 text-x1">Kenapa?</a>
-                        <a href="#" className="hover:bg-purple-100 rounded-full px-5 py-2 text-x1">Bagaimana?</a>
-                        <a href="#" className="hover:bg-purple-100 rounded-full px-5 py-2 text-x1">Tentang Kami</a>
-                    </div>
-                    <div className="ssm:block lg:hidden">
-                        {toggle ? (
-                            <AiOutlineClose onClick={closeHamburger} size={25} className="text-purple-900 cursor-pointer"/>
-                        ) : (<HiMenuAlt1 onClick={openHamburger} size={25} className="text-purple-900 cursor-pointer"/>) }
-                    </div>
-                </div>
+        <div className="mx-[92px] flex items-center justify-between pb-10">
+            <img src="Logo.svg" alt="Logo PartnerUp" />
+            <div className="text-xl font-medium font-Poppins space-x-9">
+                <Link 
+                    to="why" 
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                    className="cursor-pointer hover:bg-purple-100 rounded-full py-2 px-3">Kenapa?</Link>
+                <Link 
+                    to="how" 
+                    spy={true}
+                    smooth={true}
+                    duration={500} 
+                    className="cursor-pointer hover:bg-purple-100 rounded-full py-2 px-3">Bagaimana?</Link>
+                <Link 
+                    to="aboutUs" 
+                    spy={true}
+                    smooth={true}
+                    duration={500} 
+                    className="cursor-pointer hover:bg-purple-100 rounded-full py-2 px-3">Tentang Kami</Link>
             </div>
-
-            <div className="ssm:block lg:hidden">
-                {toggle ? (
-                    <div className="font-medium font-Poppins">
-                    <ul className="ml-20">
-                        <li className="text-l mb-3 cursor-pointer">Kenapa?</li>
-                        <li className="text-l mb-3 cursor-pointer">Bagaimana?</li>
-                        <li className="text-l mb-3 cursor-pointer">Tentang Kami</li>
-                    </ul>
-                </div>
-                ) 
-                : (
-                    <div></div>
-                ) }
-                
-            </div>
-       </>
+        </div>
     )
 }
 

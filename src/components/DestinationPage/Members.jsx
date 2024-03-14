@@ -5,6 +5,7 @@ import RizkaProfile from "../../assets/image/RizkaProfile.svg"
 import Arrow from "../../assets/icon/Arrow.svg"
 import BagasProfile from "../../assets/image/BagasProfile.svg"
 import AzmiProfile from "../../assets/image/AzmiProfile.svg"
+import { Link, animateScroll as scroll } from "react-scroll";
 
 const data = [
     {
@@ -39,7 +40,7 @@ const data = [
 
 function Members() {
     return (
-        <div className="m-auto mx-40 font-Poppins">
+        <div className="m-auto ml-[92px] font-Poppins">
             <div className="mt-20 flex flex-row gap-10 overflow-y-auto scrollbar-hide">
                 {data.map((d, index) => (
                     <div key={index} className="w-[566px] h-[300px] px-[52px] pt-[52px] pb-[104px] bg-white rounded-[52px] shadow justify-start items-center gap-3 inline-flex">
@@ -60,11 +61,16 @@ function Members() {
                     </div>
                 ))}
             </div>
-            <div className="mt-14 flex justify-end mx-40">
+            <div className="mt-14 flex justify-end mr-[92px]">
             <div className="w-[184px] h-[34px] px-3 py-2.5 rounded-2xl border border-purple-900 justify-center flex">
-                <button className="text-purple-900 text-base font-normal font-['Poppins'] flex items-center gap-2">
+                <Link 
+                    to="description" 
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                    className="cursor-pointer text-purple-900 text-base font-normal font-['Poppins'] flex items-center gap-2">
                     Kembali ke atas <img src={Arrow} alt="Arrow" />
-                </button>
+                </Link>
             </div>
             </div>
         </div>
