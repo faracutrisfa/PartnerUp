@@ -2,7 +2,7 @@ import { axiosInstance } from "../CoreApi";
 
 const handleLogin = async (body) => {
     try {
-      const response = await axiosInstance.post("auth/login", {
+      const response = await axiosInstance.post("login", {
         email: body.email,
         password: body.password,
       });
@@ -10,12 +10,12 @@ const handleLogin = async (body) => {
       return response.data;
     } catch (error) {
       throw error;
-    }
+    }         
 };
 
 const handleRegister = async (body) => {
   try {
-    const response = await axiosInstance.post("auth/register", {
+    const response = await axiosInstance.post("register", {
       email: body.email,
       password: body.password,
     });
