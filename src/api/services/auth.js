@@ -13,4 +13,17 @@ const handleLogin = async (body) => {
     }
 };
 
-export { handleLogin };
+const handleRegister = async (body) => {
+  try {
+    const response = await axiosInstance.post("auth/register", {
+      email: body.email,
+      password: body.password,
+    });
+
+    return response.data;
+  } catch (error) {
+    throw error;
+  }
+};
+
+export { handleLogin, handleRegister };

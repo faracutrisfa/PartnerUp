@@ -1,8 +1,11 @@
 import React from "react";
+import MainLayout from "../components/Layout/MainLayout";
 
 const MainPage = () => {
     return(
-        <div className="font-bold text-center">MAIN PAGE</div>
+        <MainLayout>
+            
+        </MainLayout>
     )
 }
 
