@@ -26,7 +26,7 @@ const RegisterForm = () => {
         const response = await handleRegister(form);
 
         setTimeout(() => {
-            navigate("/login");
+            navigate("/biodata");
         }, 1000);
         } catch (error) {
         console.log(error);
@@ -89,7 +89,7 @@ const RegisterForm = () => {
                 </div>
 
                 <button type="submit" className="w-[532px] h-[72px] px-[136px] py-6 mt-[32px] bg-purple-900 bg-opacity-50 rounded-3xl border justify-center items-center gap-3 inline-flex text-purple-50 font-bold text-xl hover:bg-purple-900">
-                    <Link to='/biodata'>Daftar</Link>
+                    Daftar
                 </button>
 
                 <div className="text-center mt-5">

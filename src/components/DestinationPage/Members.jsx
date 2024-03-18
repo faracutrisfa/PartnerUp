@@ -18,14 +18,14 @@ const data = [
     {
         name: "Rizka Oktavia Sari",
         position: "Product Design",
-        review: "Maaf yh developer q desainnya blom kelar (((meminta mff di atas materai)))",
+        review: "Mari kita berdoa semoga desainku kelar HARI INI at least mvp nya",
         image: RizkaProfile,
         icon: Kutipan,
     },
     {
         name: "Cut Risfa Zuhra",
         position: "Front End Developer",
-        review: "bersyukur kita tidak tipes",
+        review: "bersyukur kita tidak tipes, otw sih",
         image: CutProfile,
         icon: Kutipan,
     },

@@ -23,7 +23,7 @@ const LoginForm = () => {
         window.localStorage.setItem("token", response.data.token);
   
         setTimeout(() => {
-          navigate("/");
+          navigate("/main");
         }, 1000);
       } catch (error) {
         console.log(error);
@@ -75,7 +75,7 @@ const LoginForm = () => {
             </div>
 
             <button type="submit" className="w-[532px] h-[72px] px-[136px] py-6 mt-[32px] bg-purple-900 bg-opacity-50 rounded-3xl border justify-center items-center gap-3 inline-flex text-purple-50 font-bold text-xl hover:bg-purple-900">
-                <Link to='/main'>Masuk</Link>
+                Masuk
             </button>
 
             <div className="text-center mt-5">
