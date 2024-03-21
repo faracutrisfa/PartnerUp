@@ -17,7 +17,7 @@ const BiodataForm = () => {
         skill_id: []
     });
   
-    
+
     const handleSubmit = async (e) => {
       e.preventDefault();
   
@@ -43,7 +43,7 @@ const BiodataForm = () => {
             if (selectedMinat.length < 5) {
                 setSelectedMinat(prevMinat => [...prevMinat, selectedValue]);
             } else {
-                alert("Anda hanya dapat memilih maksimal 5 pilihan");
+                alert("Pilihan sudah mencapai batas maksimal");
             }
         }
     }
@@ -60,7 +60,7 @@ const BiodataForm = () => {
             if (selectedSkills.length < 5) {
                 setSelectedSkills(prevSkills => [...prevSkills, selectedValue]);
             } else {
-                alert("Anda hanya dapat memilih maksimal 5 pilihan");
+                alert("Pilihan sudah mencapai batas maksimal");
             }
         }
     }    
