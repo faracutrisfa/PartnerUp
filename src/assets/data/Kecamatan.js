@@ -1,22 +1,22 @@
 export const Kecamatan = [
     {
-        value: "blimbing",
+        district_id: 1,
         text: "Blimbing"
     },
     {
-        value: "kedungkandang",
+        district_id: 2,
         text: "Kedungkandang"
     },
     {
-        value: "klojen",
+        district_id: 3,
         text: "Klojen"
     },
     {
-        value: "lowokwaru",
+        district_id: 4,
         text: "Lowokwaru"
     },
     {
-        value: "sukun",
+        district_id: 5,
         text: "Sukun"
     },
 ]

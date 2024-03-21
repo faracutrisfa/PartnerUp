@@ -1,134 +1,134 @@
 export const ListMinat = [
     {
-        value: "Desain Interior",
+        minat_id: 1,
         minat: "Desain Interior"
     },
     {   
-        value: "Edukasi",
+        minat_id: 2,
         minat: "Edukasi"
     },
     {   
-        value: "Hiburan",
+        minat_id: 3,
         minat: "Hiburan"
     },
     {   
-        value: "Hewan Peliharaan",
+        minat_id: 4,
         minat: "Hewan Peliharaan"
     },
     {
-        value: "Industri Hijau",
+        minat_id: 5,
         minat: "Industri Hijau"
     },
     {
-        value: "Kecantikan",
+        minat_id: 6,
         minat: "Kecantikan"
     },
     {
-        value: "Kesehatan",
+        minat_id: 7,
         minat: "Kesehatan"
     },
     {
-        value: "Keuangan",
+        minat_id: 8,
         minat : "Keuangan"
     },
     { 
-        value: "Layanan Kreatif",
+        minat_id: 9,
         minat: "Layanan Kreatif"
     },
     {
-        value: "Lingkungan",
+        minat_id: 10,
         minat: "Lingkungan"
     },
     {
-        value: "Logistik",
+        minat_id: 11,
         minat: "Logistik"
     },
     {
-        value: "Manajemen",
+        minat_id: 12,
         minat: "Manajemen"
     },
     {
-        value: "Manufaktur",
+        minat_id: 13,
         minat: "Manufaktur"
     },
     {
-        value: "Makanan dan Minuman",
+        minat_id: 14,
         minat: "Makanan dan Minuman"
     },
     { 
-        value: "Media",
+        minat_id: 15,
         minat: "Media"
     },
     {
-        value: "Mode Fashion",
+        minat_id: 16,
         minat: "Mode Fashion"
     },
     {
-        value: "Olahraga",
+        minat_id: 17,
         minat: "Olahraga"
     },
     {
-        value: "Otomotif",
+        minat_id: 18,
         minat: "Otomotif"
     },
     {
-        value: "Pariwisata",
+        minat_id: 19,
         minat: "Pariwisata"
     },
     {
-        value: "Pemasaran",
+        minat_id: 20,
         minat: "Pemasaran"
     },
     {
-        value: "Penjualan Daring/e-commerce",
+        minat_id: 21,
         minat: "Penjualan Daring/e-commerce"
     },
     {
-        value: "Penulisan",
+        minat_id: 22,
         minat: "Penulisan"
     },
     {
-        value: "Perangkat Lunak",
+        minat_id: 23,
         minat: "Perangkat Lunak"
     },
     {
-        value: "Perjalanan",
+        minat_id: 24,
         minat: "Perjalanan"
     },
     {
-        value: "Pertanian dan Perkebunan",
+        minat_id: 25,
         minat: "Pertanian dan Perkebunan"
     },
     {
-        value: "Peternakan",
+        minat_id: 26,
         minat: "Peternakan"
     },
     {
-        value: "Roti dan Kue Basah",
+        minat_id: 27,
         minat: "Roti dan Kue Basah"
     },
     {
-        value: "Riset",
+        minat_id: 28,
         minat: "Riset"
     },
     {
-        value: "Seni dan Kerajinan",
+        minat_id: 29,
         minat: "Seni dan Kerajinan"
     },
     {
-        value: "Tanaman",
+        minat_id: 30,
         minat: "Tanaman"
     },
     {
-        value: "Teknologi",
+        minat_id: 31,
         minat: "Teknologi"
     },
     {
-        value: "Teknologi Informasi",
+        minat_id: 32,
         minat: "Teknologi Informasi"
     },
     {
-        value: "Tekstil",
+        minat_id: 33,
         minat:"Tekstil"
     }
 ]

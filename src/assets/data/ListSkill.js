@@ -1,14 +1,14 @@
 export const ListSkill = [
     {
-        value: "Analisis Data",
+        skill_id: 1,
         text: "Analisis Data"
     },
     {
-        value: "Analisis Keuangan",
+        skill_id: 2,
         text: "Analisis Keuangan"
     },
     {
-        value: "Bahasa Asing",
+        skill_id: 3,
         text: "Bahasa Asing"
     }
 ]

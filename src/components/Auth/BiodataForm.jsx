@@ -92,7 +92,7 @@ const BiodataForm = () => {
                         <option value="" disabled selected className="">Pilih Perguruan Tinggi</option>
                         {
                             asalUniversitas.map((universitas) => {
-                                return <option value={universitas.value} className="text-bold" >{universitas.text}</option>
+                                return <option value={universitas.uni_id} className="text-bold" >{universitas.text}</option>
                             })
                         }
                     </select>
@@ -114,7 +114,7 @@ const BiodataForm = () => {
                                 <option value="" disabled selected className="">Pilih Kecamatan</option>
                                 {
                                     Kecamatan.map((Kecamatan) => {
-                                        return <option value={Kecamatan.value} className="text-bold" >{Kecamatan.text}</option>
+                                        return <option value={Kecamatan.district_id} className="text-bold" >{Kecamatan.text}</option>
                                     })
                                 }
                             </select>
@@ -131,7 +131,7 @@ const BiodataForm = () => {
                         <option value="" disabled selected className="">Pilih Minat Bisnis (Maksimal 5 Pilihan)</option>
                         {
                             ListMinat.map(item => (
-                            <option key={item.value} value={item.value}>{item.minat}</option>
+                            <option key={item.minat_id} value={item.minat}>{item.minat}</option>
                         ))}
                     </select>
                     <div>
@@ -156,7 +156,7 @@ const BiodataForm = () => {
                         <option value="" disabled selected className="">Pilih Keterampilan (Maksimal 5 Pilihan)</option>
                         {
                             ListSkill.map(skill => (
-                            <option key={skill.value} value={skill.value}>{skill.text}</option>
+                            <option key={skill.skill_id} value={skill.text}>{skill.text}</option>
                         ))}
                     </select>
                     <div>
