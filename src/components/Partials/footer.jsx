@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
     return(
+        //Footer
         <footer className="mt-20">
             <div className="border border-black border-opacity-25 "></div>
             <div className="mx-[92px]">
