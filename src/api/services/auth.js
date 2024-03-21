@@ -28,7 +28,7 @@ const handleRegister = async (body) => {
 
 const handleBiodata = async (body) => {
   try {
-    const response = await axiosInstance.post("user/bio/11149f48-e430-11ee-b5f7-ced48f80b63f ", {
+    const response = await axiosInstance.post("user/bio/11149f48-e430-11ee-b5f7-ced48f80b63f", {
       name: body.name,
       uni_id: body.uni_id,
       district_id: body.district_id,

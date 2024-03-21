@@ -17,11 +17,32 @@ const BiodataForm = () => {
         skill_id: []
     });
   
+    // const handleSubmit2 = (e) => {
+    //     e.preventDefault();
+
+    //     const updatedForm = {
+    //         ...form,
+    //         minat_id: selectedMinat,
+    //         skill_id: selectedSkills
+    //     };
+
+    //     console.log(updatedForm);
+    // };
+    
 
     const handleSubmit = async (e) => {
       e.preventDefault();
-  
+
+      const updatedForm = {
+            ...form,
+            minat_id: selectedMinat,
+            skill_id: selectedSkills
+        };
+
       try {
+        setForm({ ...form, minat_id: selectedMinat.minat_id })
+        setForm({ ...form, skill_id: selectedSkills.skill_id })
+
         const response = await handleBiodata(form);
   
         window.localStorage.setItem("token", response.data.token);
@@ -142,7 +163,7 @@ const BiodataForm = () => {
                         <option value="" disabled selected className="">Pilih Minat Bisnis (Maksimal 5 Pilihan)</option>
                         {
                             ListMinat.map(item => (
-                            <option key={item.minat_id} value={item.minat}>{item.minat}</option>
+                            <option key={item.minat_id} value={item.minat_id}>{item.minat}</option>
                         ))}
                     </select>
                     <div>
@@ -169,7 +190,7 @@ const BiodataForm = () => {
                         <option value="" disabled selected className="">Pilih Keterampilan (Maksimal 5 Pilihan)</option>
                         {
                             ListSkill.map(skill => (
-                            <option key={skill.skill_id} value={skill.text}>{skill.text}</option>
+                            <option key={skill.skill_id} value={skill.skill_id}>{skill.text}</option>
                         ))}
                     </select>
                     <div>
