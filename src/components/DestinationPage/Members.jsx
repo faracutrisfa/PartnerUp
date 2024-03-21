@@ -25,7 +25,7 @@ const data = [
     {
         name: "Cut Risfa Zuhra",
         position: "Front End Developer",
-        review: "bersyukur kita tidak tipes, otw sih",
+        review: "bersyukur kita tidak tipes, semoga berkah",
         image: CutProfile,
         icon: Kutipan,
     },

@@ -34,32 +34,40 @@ const BiodataForm = () => {
     };
 
 
-    const [Value, setValue] = useState([]);
+    const [selectedMinat, setSelectedMinat] = useState([]);
 
     function handleMinat(event) {
         const selectedValue = event.target.value;
-        if (!Value.includes(selectedValue)) {
-            if (Value.length < 5) {
-                setValue(prevValues => [...prevValues, selectedValue]);
+        if (!selectedMinat.includes(selectedValue)) {
+            if (selectedMinat.length < 5) {
+                setSelectedMinat(prevMinat => [...prevMinat, selectedValue]);
             } else {
                 alert("Anda hanya dapat memilih maksimal 5 pilihan");
             }
         }
     }
 
-    const [value, setSelectedValue] = useState([]);
+    const removeMinat = (indexToRemove) => {
+        setSelectedMinat(prevMinat=> prevMinat.filter((_, index) => index !== indexToRemove));
+    };
+
+    const [selectedSkills, setSelectedSkills] = useState([]);
 
     function handleSkill(event) {
-        const selectedValues = event.target.value;
-        if (!value.includes(selectedValues)) {
-            if (value.length < 5) {
-                setSelectedValue(prevValue => [...prevValue, selectedValues]);
+        const selectedValue = event.target.value;
+        if (!selectedSkills.includes(selectedValue)) {
+            if (selectedSkills.length < 5) {
+                setSelectedSkills(prevSkills => [...prevSkills, selectedValue]);
             } else {
                 alert("Anda hanya dapat memilih maksimal 5 pilihan");
             }
         }
-    }
+    }    
 
+    const removeSkill = (indexToRemove) => {
+        setSelectedSkills(prevSkills => prevSkills.filter((_, index) => index !== indexToRemove));
+    };
+    
     return(
         <div className="relative flex justify-center items-center font-Poppins">
             <img src={Elemen} alt="Element Landing Page " className="w-full -mt-16" />
@@ -127,8 +135,15 @@ const BiodataForm = () => {
                         ))}
                     </select>
                     <div>
-                        {Value.map((value, index) => (
-                            <p key={index} className="mt-5 text-purple-900 inline-block h-9 px-5 py-[4px] bg-purple-100 rounded-2xl border-2 border-purple-900 justify-start">{value}</p>
+                        {selectedMinat.map((value, index) => (
+                            <p 
+                                key={index} 
+                                className="mt-5 mr-3 text-purple-900 inline-flex items-center h-9 px-5 py-[4px] bg-purple-100 rounded-2xl border-2 border-purple-900 justify-start">{value} 
+                                <button
+                                    onClick={() => removeMinat(index)}
+                                    className="inline-flex ml-2.5 text-xl">x
+                                </button>
+                            </p>
                         ))}
                     </div>
                     
@@ -145,10 +160,18 @@ const BiodataForm = () => {
                         ))}
                     </select>
                     <div>
-                        {value.map((value, index) => (
-                            <p key={index} className="mt-5 text-purple-900 inline-block h-9 px-5 py-[4px] bg-purple-100 rounded-2xl border-2 border-purple-900 justify-start">{value}</p>
+                        {selectedSkills.map((value, index) => (
+                            <p 
+                                key={index} 
+                                className="mt-5 mr-3 text-purple-900 inline-flex items-center h-9 px-5 py-[4px] bg-purple-100 rounded-2xl border-2 border-purple-900 justify-start">{value} 
+                                <button
+                                    onClick={() => removeSkill(index)}
+                                    className="inline-flex ml-2.5 text-xl">x
+                                </button>
+                            </p>
                         ))}
                     </div>
+
                     <button 
                         type="submit" 
                         className="float-right mt-5 w-40 h-[59px] px-12 py-6 bg-purple-900 bg-opacity-50 rounded-[64px] justify-center items-center gap-2.5 inline-flex text-purple-50 font-semibold hover:bg-purple-900">
