@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Elemen from "../../assets/image/ElemenRegister.svg"
 import { asalUniversitas } from "../../assets/data/AsalUniversitas";
 import { Kecamatan } from "../../assets/data/Kecamatan";
@@ -16,37 +16,23 @@ const BiodataForm = () => {
         minat_id: [],
         skill_id: []
     });
-  
-    // const handleSubmit2 = (e) => {
-    //     e.preventDefault();
-
-    //     const updatedForm = {
-    //         ...form,
-    //         minat_id: selectedMinat,
-    //         skill_id: selectedSkills
-    //     };
-
-    //     console.log(updatedForm);
-    // };
-    
-
+       
     const handleSubmit = async (e) => {
       e.preventDefault();
-
-      const updatedForm = {
+  
+      try {
+       
+        const updatedForm = {
             ...form,
             minat_id: selectedMinat,
             skill_id: selectedSkills
         };
-
-      try {
-        setForm({ ...form, minat_id: selectedMinat.minat_id })
-        setForm({ ...form, skill_id: selectedSkills.skill_id })
-
-        const response = await handleBiodata(form);
+        
+        const response = await handleBiodata(updatedForm);
   
         window.localStorage.setItem("token", response.data.token);
-  
+        
+       
         setTimeout(() => {
           navigate("/main");
         }, 1000);
@@ -59,14 +45,16 @@ const BiodataForm = () => {
     const [selectedMinat, setSelectedMinat] = useState([]);
 
     function handleMinat(event) {
-        const selectedValue = event.target.value;
+        const selectedValue = parseInt(event.target.value);
         if (!selectedMinat.includes(selectedValue)) {
             if (selectedMinat.length < 5) {
                 setSelectedMinat(prevMinat => [...prevMinat, selectedValue]);
+                
             } else {
                 alert("Pilihan sudah mencapai batas maksimal");
             }
         }
+       
     }
 
     const removeMinat = (indexToRemove) => {
@@ -76,10 +64,12 @@ const BiodataForm = () => {
     const [selectedSkills, setSelectedSkills] = useState([]);
 
     function handleSkill(event) {
-        const selectedValue = event.target.value;
+        const selectedValue = parseInt(event.target.value);
         if (!selectedSkills.includes(selectedValue)) {
             if (selectedSkills.length < 5) {
                 setSelectedSkills(prevSkills => [...prevSkills, selectedValue]);
+                
+               
             } else {
                 alert("Pilihan sudah mencapai batas maksimal");
             }
@@ -89,7 +79,7 @@ const BiodataForm = () => {
     const removeSkill = (indexToRemove) => {
         setSelectedSkills(prevSkills => prevSkills.filter((_, index) => index !== indexToRemove));
     };
-    
+   
     return(
         <div className="relative flex justify-center items-center font-Poppins">
             <img src={Elemen} alt="Element Landing Page " className="w-full -mt-16" />
@@ -114,11 +104,11 @@ const BiodataForm = () => {
                         id="universitas" 
                         required 
                         className="mt-[16px] w-[532px] h-[67px] pl-9 rounded-3xl border-2 border-purple-900 text-black text-opacity-30 text-base"
-                        onChange={(e) => setForm({ ...form, uni_id: e.target.value })} >
+                        onChange={(e) => setForm({ ...form, uni_id: parseInt(e.target.value) })} >
                         <option value="" disabled selected className="">Pilih Perguruan Tinggi</option>
                         {
                             asalUniversitas.map((universitas) => {
-                                return <option value={universitas.uni_id} className="text-bold" >{universitas.text}</option>
+                                return <option value={parseInt(universitas.uni_id) } className="text-bold" >{universitas.text}</option>
                             })
                         }
                     </select>
@@ -140,7 +130,7 @@ const BiodataForm = () => {
                                 id="District" 
                                 required 
                                 className="w-[296px] h-[67px] pl-9 rounded-3xl border-2 border-purple-900 text-black text-opacity-30 text-base" 
-                                onChange={(e) => setForm({ ...form, district_id: e.target.value })}>
+                                onChange={(e) => setForm({ ...form, district_id: parseInt(e.target.value)  })}>
                                 <option value="" disabled selected className="">Pilih Kecamatan</option>
                                 {
                                     Kecamatan.map((Kecamatan) => {

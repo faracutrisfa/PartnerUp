@@ -36,7 +36,7 @@ const MainPage = () => {
                         <div className="text-center text-black text-xl font-semibold">Rekomendasi<br/>Partner</div>
                         <Link 
                             to='/rekomendasiPartner'
-                            className="px-16 py-3 bg-purple-200 rounded-3xl justify-center items-center gap-2.5 inline-flex ">
+                            className="px-16 py-3 bg-purple-200 rounded-3xl justify-center items-center gap-2.5 inline-flex  hover:bg-purple-300 ">
                             <p className="text-center text-purple-900 text-xl font-bold ">Pilih</p>
                         </Link>
                     </div>

@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "react-router-dom";
 
 const Footer = () => {
     return(
@@ -17,7 +16,7 @@ const Footer = () => {
                     <div className="flex flex-col ml-auto">
                         <p href="#" className="text-black text-base font-semibold font-Poppins">Lainnya</p>
                         <a href="#" className="text-black text-base font-normal font-Poppins"><u>Syarat dan Ketentuan</u></a>
-                        <a href="#" className="text-black text-base font-normal font-Poppins"><u><Link to='/biodata'>Kebijakan Privasi</Link></u></a>
+                        <a href="#" className="text-black text-base font-normal font-Poppins"><u>Kebijakan Privasi</u></a>
                     </div>
                 </div>
             </div>
