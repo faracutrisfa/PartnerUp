@@ -73,7 +73,9 @@ const BiodataForm = () => {
             <img src={Elemen} alt="Element Landing Page " className="w-full -mt-16" />
             <div className="w-[532px] absolute">
                 <form onSubmit={(e) => handleSubmit(e)}>
-                    <label htmlFor="name" className="text-black text-base font-medium">Nama Lengkap</label>
+                    <label 
+                        htmlFor="name" 
+                        className="text-black text-base font-medium">Nama Lengkap</label>
                     <input 
                         type="text" 
                         id="name"
@@ -82,7 +84,9 @@ const BiodataForm = () => {
                         className="mt-[16px] w-[532px] h-[67px] px-9 py-7 rounded-3xl border-2 border-purple-900 justify-start text-purple-900" 
                     />
 
-                    <label htmlFor="name" className="text-black text-base font-medium flex mt-[24px]">Asal Perguruan Tinggi</label>
+                    <label 
+                        htmlFor="name" 
+                        className="text-black text-base font-medium flex mt-[24px]">Asal Perguruan Tinggi</label>
                     <select 
                         name="universitas" 
                         id="universitas" 
@@ -97,14 +101,18 @@ const BiodataForm = () => {
                         }
                     </select>
 
-                    <label htmlFor="address" className="text-black text-base font-medium flex mt-[24px]">Alamat</label>
+                    <label 
+                        htmlFor="address" 
+                        className="text-black text-base font-medium flex mt-[24px]">Alamat</label>
                     <div className="flex flex-row gap-5">
                         <div className="flex flex-col">
                             <label htmlFor="city" className=" text-black text-opacity-30 text-base mb-2">Kota</label>
                             <button className="text-purple-900 text-base font-medium w-[216px] h-[67px] px-9 py-7 bg-purple-100 rounded-3xl border-2 border-purple-900 justify-start items-center inline-flex">Malang</button>
                         </div>
                         <div className="flex flex-col">
-                            <label htmlFor="District" className="text-black text-opacity-30 text-base mb-2">Kecamatan</label>
+                            <label 
+                                htmlFor="District" 
+                                className="text-black text-opacity-30 text-base mb-2">Kecamatan</label>
                             <select 
                                 name="District" 
                                 id="District" 
@@ -121,7 +129,9 @@ const BiodataForm = () => {
                         </div>
                     </div>
 
-                    <label htmlFor="Minat" className="text-black text-base font-medium flex mt-[24px]">Minat</label>
+                    <label 
+                        htmlFor="Minat" 
+                        className="text-black text-base font-medium flex mt-[24px]">Minat</label>
                     <select 
                         name="Minat" 
                         id="Minat" 
@@ -147,7 +157,9 @@ const BiodataForm = () => {
                         ))}
                     </div>
                     
-                    <label htmlFor="Skill" className="text-black text-base font-medium flex mt-[24px]">Keterampilan</label>
+                    <label 
+                        htmlFor="Skill" 
+                        className="text-black text-base font-medium flex mt-[24px]">Keterampilan</label>
                     <select    
                         name="Skill" 
                         id="Skill" 
