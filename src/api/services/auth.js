@@ -45,9 +45,20 @@ const handleBiodata = async (body) => {
   }
 };
 
-const getUserByName = async() => {
-  const user = await axiosInstance.get("user/get-user")
-  console.log({userList : user})
-}
+const getUserByName = async () => {
+  const token = window.localStorage.getItem("token");
+
+  try {
+    const response = await axiosInstance.get("user/get-user", {
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    });
+
+    return response.data;
+  } catch (error) {
+    throw error;
+  }
+};
 
 export { handleLogin, handleRegister, handleBiodata, getUserByName };

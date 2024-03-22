@@ -160,7 +160,8 @@ const BiodataForm = () => {
                         {selectedMinat.map((value, index) => (
                             <p 
                                 key={index} 
-                                className="mt-5 mr-3 text-purple-900 inline-flex items-center h-9 px-5 py-[4px] bg-purple-100 rounded-2xl border-2 border-purple-900 justify-start">{value} 
+                                className="mt-5 mr-3 text-purple-900 inline-flex items-center h-9 px-5 py-[4px] bg-purple-100 rounded-2xl border-2 border-purple-900 justify-start">
+                                    {ListMinat.find(item => item.minat_id === parseInt(value)).minat} 
                                 <button
                                     onClick={() => removeMinat(index)}
                                     className="inline-flex ml-2.5 text-xl">x
@@ -187,7 +188,8 @@ const BiodataForm = () => {
                         {selectedSkills.map((value, index) => (
                             <p 
                                 key={index} 
-                                className="mt-5 mr-3 text-purple-900 inline-flex items-center h-9 px-5 py-[4px] bg-purple-100 rounded-2xl border-2 border-purple-900 justify-start">{value} 
+                                className="mt-5 mr-3 text-purple-900 inline-flex items-center h-9 px-5 py-[4px] bg-purple-100 rounded-2xl border-2 border-purple-900 justify-start">
+                                    {ListSkill.find(item => item.skill_id === parseInt(value)).text}
                                 <button
                                     onClick={() => removeSkill(index)}
                                     className="inline-flex ml-2.5 text-xl">x
