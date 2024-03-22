@@ -4,7 +4,7 @@ import NavbarMain from "../Partials/NavbarMain";
 
 const MainLayout = ({ children }) => {
     return (
-      <div className="pt-10 ">
+      <div className="pt-10">
         <NavbarMain />
         {children}
         <Footer />

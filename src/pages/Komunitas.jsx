@@ -1,11 +1,11 @@
 import React from "react";
-import LoginRegisterLayout from "../components/Layout/LoginRegisterLayout";
+import MainLayout from "../components/Layout/MainLayout"
 
 const Komunitas = () => {
     return(
-        <LoginRegisterLayout>
-            <div>INI KOMUNITAS</div>
-        </LoginRegisterLayout>
+        <MainLayout>
+            <div className="flex items-center justify-center font-Poppins opacity-40 h-[361px]">KOMUNITAS</div>
+        </MainLayout>
     )
 }
 

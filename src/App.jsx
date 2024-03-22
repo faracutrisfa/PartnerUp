@@ -9,6 +9,9 @@ import Komunitas from './pages/Komunitas';
 import Chat from './pages/Chat';
 import Notification from './pages/Notifications';
 import Premium from './pages/Premium';
+import Profiles from './pages/Profiles';
+import UpdateProfile from './pages/UpdateProfile';
+import ProfilePartner from './pages/ProfilePartner';
 
 function App() {
   return (
@@ -24,6 +27,9 @@ function App() {
         <Route path='/chat' element={<Chat />} ></Route>
         <Route path='/notifications' element={<Notification />} ></Route>
         <Route path='/premium' element={<Premium />} ></Route>
+        <Route path='/profile' element={<Profiles />} ></Route>
+        <Route path='/updateProfile' element={<UpdateProfile />} ></Route>
+        <Route path='/profilePartner' element={<ProfilePartner />}></Route>
       </Routes>
     </Router>
   )

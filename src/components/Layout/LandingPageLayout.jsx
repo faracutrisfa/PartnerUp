@@ -4,7 +4,7 @@ import Footer from "../Partials/Footer";
 
 const LandingPageLayout = ({ children }) => {
     return (
-      <div className="pt-10 ">
+      <div className="pt-10">
         <Navbar />
         {children}
         <Footer />

@@ -2,7 +2,6 @@ import React from "react"
 
 const Footer = () => {
     return(
-        //footer
         <footer className="mt-20">
             <div className="border border-black border-opacity-25 "></div>
             <div className="mx-[92px]">

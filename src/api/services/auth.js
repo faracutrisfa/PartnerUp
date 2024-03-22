@@ -46,15 +46,8 @@ const handleBiodata = async (body) => {
 };
 
 const getUserByName = async() => {
-  
-  try {
-    const search = await axiosInstance.get("user/get-user")
-    console.log({userList: search})
-  }
-    
-  catch (error) {
-    console.log(error)
-  }
+  const user = await axiosInstance.get("user/get-user")
+  console.log({userList : user})
 }
 
 export { handleLogin, handleRegister, handleBiodata, getUserByName };

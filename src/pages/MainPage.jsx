@@ -12,21 +12,21 @@ const MainPage = () => {
         getUserByName()
     }, [])
 
-    const search = (q) => {
+    const user = (q) => {
         console.log({q})
     }
 
     return(
         <MainLayout>
              <div className="font-Poppins flex items-center justify-center flex-col mt-[61px]">
-                <div className="text-black text-xl font-semibold">Apa yang kamu butuhkan?</div>
+                <div className="text-black text-xl font-semibold mr-[550px]">Apa yang kamu butuhkan?</div>
                 <form>
                     <input 
                         type="text" 
                         id="search"
                         placeholder="Cari"
                         className="mt-[24px] w-[830px] h-[49px] pl-[50px] pr-60 py-3 text-purple-900 bg-white rounded-2xl border-2 border-purple-900 justify-start items-center gap-2 inline-flex" 
-                        onChange={({ target }) => search(target.value) }
+                        onChange={({ target }) => user(target.value) }
                     />
                     <img 
                         src={Search} 

@@ -12,10 +12,11 @@ import Arrow from "../../assets/icon/arrow-down.svg";
 import { Link } from "react-router-dom";
 
 const NavbarMain = () => {
-    const [partnerHovered, setPartnerHovered] = useState(true);
+    const [partnerHovered, setPartnerHovered] = useState(false);
     const [chatHovered, setChatHovered] = useState(false);
     const [notificationHovered, setNotificationHovered] = useState(false);
     const [premiumHovered, setPremiumHovered] = useState(false);
+    const [optionsVisible, setOptionsVisible] = useState(false);
 
     return (
         <div className="mx-[92px] items-center pb-10 flex flex-row font-Poppins">
@@ -83,15 +84,24 @@ const NavbarMain = () => {
                         alt="Profile Picture"
                     />
                     <div className="w-[197px] h-[76px] relative">
-                        <h1 className="left-0 top-0 absolute text-black text-opacity-40 text-xl font-semibold font-['Poppins']">Elys Warren</h1>
-                        <p className="w-[197px] left-0 top-[28px] absolute text-black text-opacity-40 text-base font-normal font-['Poppins']">Mahasiswa di Universitas Brawijaya</p>
+                        <h1 className="left-0 top-0 absolute text-black text-xl font-semibold">Elys Warren</h1>
+                        <p className="w-[197px] left-0 top-[28px] absolute text-black text-base font-normal">Mahasiswa di Universitas Brawijaya</p>
                     </div>
                 </div>
                 <img
                     src={Arrow}
                     alt="Icon Arrow"
                     className="w-5 h-5 left-[282px] top-[5px] absolute cursor-pointer"
+                    onClick={() => setOptionsVisible(!optionsVisible)}
                 />
+                {optionsVisible && (
+                    <div className="absolute left-0 mt-6 bg-white border border-gray-200 rounded-md shadow-lg">
+                        <ul className="font-medium flex flex-col">
+                            <button className="py-2 text-left pl-3 pr-10 hover:bg-gray-100"><Link to='/profile'>Profil</Link></button>
+                            <button className="py-2 text-left pl-3 pr-10 hover:bg-gray-100">Pengaturan</button>
+                        </ul>
+                    </div>
+                )}
             </div>
         </div>
     );

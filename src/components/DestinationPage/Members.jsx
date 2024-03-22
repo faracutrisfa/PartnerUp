@@ -8,7 +8,7 @@ import AzmiProfile from "../../assets/image/AzmiProfile.svg"
 import { Link, animateScroll as scroll } from "react-scroll";
 
 const data = [
-    {
+    {   
         name: "Bagas Rizaluddin",
         position: "Product Manager",
         review: "saya hanya bisa pasrah dengan adiks adiks ini",
