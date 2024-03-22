@@ -10,7 +10,7 @@ const Description = () => {
         <main id="description" className="font-Poppins px-[147px] pt-10">
             <div className="flex flex-wrap">
                 <article className="w-full md:w-2/4 mt-12 ">
-                    <h1 className="font-semibold text-4xl mb-8">Halo <span className="text-purple-900">mahasiwa</span>, ayo <br /> temukan <span className="text-purple-900">partner bisnismu</span> <br /> di sini!</h1>
+                    <h1 className="font-semibold text-4xl mb-8">Halo <span className="text-purple-900">mahasiswa</span>, ayo <br /> temukan <span className="text-purple-900">partner bisnismu</span> <br /> di sini!</h1>
                     <p className="font-reguler text-xl mb-8">Berhenti membuat alasan untuk tidak memulai bisnis. <b>PartnerUp</b> menghubungkanmu dengan ribuan mahasiswa di Kota Malang yang dapat menjadi partner bisnismu!</p>
                     <button onClick={() => navigate('/login')} className="font-semibold text-sm text-purple-50 bg-purple-900 border-2 border-purple-900 rounded-full px-8 py-3 hover:bg-purple-50 mr-5 hover:border-purple-900 hover:text-purple-900">Masuk</button>
                     <button onClick={() => navigate('/register')} className="font-semibold text-sm text-purple-900 hover:text-purple-50 border-2  border-purple-900 hover:bg-purple-900 rounded-full px-8 py-3  dark:border-purple-900  dark:hover:bg-purple-900 ">Daftar</button>

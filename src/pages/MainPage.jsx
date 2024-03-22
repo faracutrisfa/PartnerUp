@@ -5,17 +5,8 @@ import Line from "../assets/icon/line.svg"
 import Community from "../assets/icon/community.svg"
 import Person from "../assets/icon/person.svg"
 import { Link } from "react-router-dom";
-import { getUserByName } from "../api/services/auth";
 
 const MainPage = () => {
-    useEffect(() => {
-        getUserByName()
-    }, [])
-
-    const user = (q) => {
-        console.log({q})
-    }
-
     return(
         <MainLayout>
              <div className="font-Poppins flex items-center justify-center flex-col mt-[61px]">
@@ -26,7 +17,6 @@ const MainPage = () => {
                         id="search"
                         placeholder="Cari"
                         className="mt-[24px] w-[830px] h-[49px] pl-[50px] pr-60 py-3 text-purple-900 bg-white rounded-2xl border-2 border-purple-900 justify-start items-center gap-2 inline-flex" 
-                        onChange={({ target }) => user(target.value) }
                     />
                     <img 
                         src={Search} 

@@ -45,11 +45,11 @@ const handleBiodata = async (body) => {
   }
 };
 
-const getUserByName = async () => {
-  const token = window.localStorage.getItem("token");
+const getAllRecommend = async () => {
+  const token = window.localStorage.getItem("user/recommend-user");
 
   try {
-    const response = await axiosInstance.get("user/get-user", {
+    const response = await axiosInstance.get("", {
       headers: {
         Authorization: `Bearer ${token}`,
       },
@@ -61,4 +61,4 @@ const getUserByName = async () => {
   }
 };
 
-export { handleLogin, handleRegister, handleBiodata, getUserByName };
+export { handleLogin, handleRegister, handleBiodata, getAllRecommend };
