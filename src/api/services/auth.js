@@ -8,7 +8,8 @@ const handleLogin = async (body) => {
       });
   
       return response.data;
-    } catch (error) {
+    } 
+      catch (error) {
       throw error;
     }         
 };
@@ -21,7 +22,8 @@ const handleRegister = async (body) => {
     });
 
     return response.data;
-  } catch (error) {
+  } 
+    catch (error) {
     throw error;
   }
 };
@@ -37,10 +39,22 @@ const handleBiodata = async (body) => {
     });
 
     return response.data;
-  } catch (error) {
+  } 
+    catch (error) {
     throw error;
   }
 };
 
+const getUserByName = async() => {
+  
+  try {
+    const search = await axiosInstance.get("user/get-user")
+    console.log({userList: search})
+  }
+    
+  catch (error) {
+    console.log(error)
+  }
+}
 
-export { handleLogin, handleRegister, handleBiodata };
+export { handleLogin, handleRegister, handleBiodata, getUserByName };

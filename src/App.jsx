@@ -6,6 +6,9 @@ import BiodataPage from './pages/BiodataPages';
 import MainPage from './pages/MainPage';
 import RekomendasiPartner from './pages/RekomendasiPartner';
 import Komunitas from './pages/Komunitas';
+import Chat from './pages/Chat';
+import Notification from './pages/Notifications';
+import Premium from './pages/Premium';
 
 function App() {
   return (
@@ -18,6 +21,9 @@ function App() {
         <Route path='/main' element={<MainPage />}></Route>
         <Route path='/rekomendasiPartner' element={<RekomendasiPartner />}></Route>
         <Route path='/komunitas' element={<Komunitas />}></Route>
+        <Route path='/chat' element={<Chat />} ></Route>
+        <Route path='/notifications' element={<Notification />} ></Route>
+        <Route path='/premium' element={<Premium />} ></Route>
       </Routes>
     </Router>
   )
